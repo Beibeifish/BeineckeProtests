@@ -7,84 +7,83 @@
 
 	@font-face{
    		font-family: "ModernoFB";
-    	src: url('ModernoFB-Bold.otf'),
+    	src: 'ModernoFB-Bold.otf',
 	}
 
 	@font-face {
-		font-family: "Benton Sans";
-		src:
-			url("https://assets.staticlp.com/javascripts/2c8c3478-e1ba-4af3-bfd0-9fea259fc17f-3.woff") format("woff"),
-			url("https://assets.staticlp.com/javascripts/2c8c3478-e1ba-4af3-bfd0-9fea259fc17f-1.ttf") format("truetype");
-		font-style: normal;
-		font-stretch: normal;
-		// font-weight: var(--font-weight-light, 300);
-		font-weight: 300;
-		font-display: swap;
-	}
+  font-family: "Benton Sans";
+  src:
+    url("https://assets.staticlp.com/javascripts/2c8c3478-e1ba-4af3-bfd0-9fea259fc17f-3.woff") format("woff"),
+    url("https://assets.staticlp.com/javascripts/2c8c3478-e1ba-4af3-bfd0-9fea259fc17f-1.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  // font-weight: var(--font-weight-light, 300);
+  font-weight: 300;
+  font-display: swap;
+}
 
-	@font-face {
-		font-family: "Benton Sans";
-		src:
-			url("https://assets.staticlp.com/javascripts/743d3d3a-da58-48d2-a5c3-bd7994650e23-3.woff") format("woff"),
-			url("https://assets.staticlp.com/javascripts/743d3d3a-da58-48d2-a5c3-bd7994650e23-1.ttf") format("truetype");
-		font-style: normal;
-		font-stretch: normal;
-		// font-weight: var(--font-weight-medium, 600);
-		font-weight: 600;
-		font-display: swap;
-	}
+@font-face {
+  font-family: "Benton Sans";
+  src:
+    url("https://assets.staticlp.com/javascripts/19319132-31a6-45e2-85a5-6dacae897490-3.woff") format("woff"),
+    url("https://assets.staticlp.com/javascripts/19319132-31a6-45e2-85a5-6dacae897490-1.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  // font-weight: var(--font-weight-regular, 500);
+  font-weight: 500;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Benton Sans";
+  src:
+    url("https://assets.staticlp.com/javascripts/743d3d3a-da58-48d2-a5c3-bd7994650e23-3.woff") format("woff"),
+    url("https://assets.staticlp.com/javascripts/743d3d3a-da58-48d2-a5c3-bd7994650e23-1.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  // font-weight: var(--font-weight-medium, 600);
+  font-weight: 600;
+  font-display: swap;
+}
+
+body {
+  margin: 2em;
+  font-size: 1.5em;
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  background-color: #E8E5D8;
+}
+      
 	body {
-		margin: 2em;
-		font-size: 1.5em;
-		font-family: "Benton Sans", sans-serif;
-		font-weight: 600;
-		-webkit-font-smoothing: antialiased;
 		background-color: #E8E5D8;
 	}
 
 	.segment {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: #E8E5D8;
-    color: black;
-    font-family: "Benton Sans";
-    font-weight: var(--font-weight-light, 300);
-    height: 18vh; /* Take up 100% of the viewport height */
-    width: 95%; /* Take up 100% of the viewport width */
-    display: flex; /* Use flexbox layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    border: none;
-    text-align: center;
-}  
-
-.segment p {
-    text-align: left;
-    padding: 2rem;
-    font-size: 1.25rem;
-    max-width: 60%; /* Adjusted to fit within the container */
-}
-
-	.smallsegment {
     	padding: 20px;
     	border: 1px solid #ddd;
     	border-radius: 5px;
-    	margin: 20px;
-		background-color: black;
-   	 	color: white;
-    	font-family: Helvetica, sans-serif;
-		height: 10vh; /* Take up 100% of the viewport height */
+    	margin: 10px;
+		  background-color: #E8E5D8;
+   	 	color: black;
+    	font-family: "Benton Sans";
+      font-weight: var(--font-weight-light, 300);
+      height: 10vh; /* Take up 100% of the viewport height */
     	width: 95%; /* Take up 100% of the viewport width */
-		display: flex; /* Use flexbox layout */
-   	 	justify-content: center; /* Center horizontally */
-   	 	align-items: center; /* Center vertically */
-		border: none;
-		text-align: center;
+      display: flex; /* Use flexbox layout */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      border: none;
+      text-align: center;
   	}  
-	.datetime {
+
+	  .segment p {
+        text-align: center;
+        padding: 2rem;
+        font-size: 1.25rem;
+		width: 600px
+	}
+	  .datetime {
     	padding: 20px;
     	border: 1px solid #ddd;
     	border-radius: 5px;
@@ -102,29 +101,27 @@
 		text-align: center;
   	}  
 
-	.datetime p {
-        text-align: center;
-        padding: 2rem;
-        font-size: 2.25rem;
-		width: 800px
+	  .datetime p {
+      text-align: center;
+      padding: 2rem;
+      font-size: 2.25rem;
+      width: 800px
+	  }
+
+	  .column {
+  		float: left;
+ 		width: 30%;
+  		padding: 15px;
 	}
 
-	.grid-container-three {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 10px;
-		max-width: 1000px; /* Adjust as needed */
-		padding: 20px;
-		margin: 0 auto; /* Center the grid container */
-	}
-
-	.grid-item {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-	}
-
-      #scrolly {
+/* Clear floats after image containers */
+		.row::after {
+		content: "";
+		clear: both;
+		display: table;
+		}
+	
+		#scrolly {
         position: relative;
         padding: 1rem;
       }
@@ -155,22 +152,50 @@
 	  .step {
     margin: 0 auto 2rem auto; /* Sets margin top and bottom to 2rem and centers the element horizontally */
     margin-bottom: 25rem; /* Adds additional margin-bottom */
-    background-color: #E8E5D8; /* Sets background color to black */
-    color: black; /* Sets text color to white */
+    background-color: black; /* Sets background color to black */
+    color: white; /* Sets text color to white */
     font: inherit; /* Inherits font properties from parent */
     min-height: 50px; /* Set minimum height */
     display: inline-block; /* Ensures that the element takes up space even when it's empty */
 }
 
-      .step p {
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active {
+        background-color: goldenrod;
+        color: #3b3b3b;
+      }
+
+    .step p {
         text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+	.step {
+		opacity: 0;
+		padding: 1rem;
+		margin-bottom: 25rem; /* Adds additional margin-bottom */
+		background-color: #E8E5D8; /* Sets background color to black */
+		color: black; /* Sets text color to white */
+		font: inherit; /* Inherits font properties from parent */
+		min-height: 50px; /* Set minimum height */
+		display: inline-block; /* Ensures that the element takes up space even when it's empty */
+	}
+
+    .step p {
+        text-align: left;
         padding: 1rem;
         font-size: 1.25rem;
         border: black;
-      }
+    }
+	 
+    .hidden { visibility: hidden; }
 
-      .hidden { visibility: hidden; }
-
+	.clear20 { 
+		opacity: 20%;
+	}
 
       /* When it's less than 700 pixels wide, do normal scrollytelling */
       @media only screen and (min-width: 700px) {
@@ -205,13 +230,12 @@
 	
   </head>
 
-  
-<body>
+  <body>
 	<div> 
 		<img src = "titleCard-Artboard_1.png" style = "width:100%">
 	</div> 
 
-
+	 
 	<div class="segment">
 		<p>
 			This is placeholder text. Yale police arrested 47 pro-Palestine student protesters on Monday morning.
@@ -235,28 +259,22 @@
 			On Monday morning, pro-Palestine organizers installed a wooden bookshelf on Beinecke Plaza near the entrance to the Schwarzman Center as part of a protest titled “Books not Bombs.” After an hour of back-and-forth conversation between the protesters and University officials at the scene, facilities workers disassembled the structure as students chanted in support of Palestine, calling for Yale to divest from weapons manufacturing.
 		</p>
 	</div>
-	<div class="segment">
-		<p>Something like “after months of protests tktk”
-				Protestors erect bookshelf pop-up library in front of Schwarzman (photo)
-				Reopened in 2021 after months of construction, Beinecke Plaza also known as the Hewitt Quadrangle is at the heart of Yale’s campus, sitting between the Beinecke rare books library, Woodbridge Hall, the primary office building for administrators including President Salovey, and the Schwarzman Center, the student union.
-				Taken down one hour later
-				Books not bombs(photo)
-				Maybe a photo comparison to the shanty-town of 1986 (photo)
-				Protestors begin to occupy Beinecke Plaza, @occupybeinecke begins to operate
-				Jews for Ceasefire vigil? (photo)
-		</p>
-
-	</div>
 
 	<div class="segment">
 
 	</div>
 
-	<div class="grid-container-three">
-        <img class="grid-item" src="tents.jpg" alt="Photo 1">
-        <img class="grid-item" src="tents.jpg" alt="Photo 2">
-        <img class="grid-item" src="tents.jpg" alt="Photo 3">
-    </div>
+	<div class="row">
+		<div class="column">
+		  <img src="tents.jpg" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+		  <img src="tents.jpg" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+		  <img src="tents.jpg" alt="Mountains" style="width:100%">
+		</div>
+	  </div>
 
 	<div class="datetime">
 		<p>
@@ -287,12 +305,7 @@
 
 	<div class="segment">
 		<p>
-			25 tents crop up
-			400 protestors (photo)
-			10pm: Trustees leave Salovey sendoff party 
-			Heavy police presence (20?)
-			11:28pm flag taken down
-			Protests feel angry (audio?), people think arrests will be made, negotiations happening, they sleep overnight. pull quote video 
+			25 tents crop up, 400 protestors, 10pm: Trustees leave Salovey sendoff party, Heavy police presence (20?), 11:28pm flag taken down, Protests feel angry, people think arrests will be made, negotiations happening, they sleep overnight.
 		</p>
 	</div>
 
@@ -304,14 +317,7 @@
 
 	<div class="segment">
 		<p>
-			Our House music festival/ Kasama etc. arts events - photo / video (audio?)
-			Fewer police
-			Flag falling into sculpture garden / counterprotest, also peaceful (someone watch the punching video first) (photo)</p>
-	</div>
-
-	<div class="segment">
-		<p>
-			
+			Music events, negotiations going on between Pericles Lewis and organizers, Corporation meeting, tent village grows to 40, counter-protested, more protestors
 		</p>
 	</div>
 
@@ -322,19 +328,8 @@
 		</p>
 	</div>
 
-	<div class="container">
-		<div class="image">
-		  <img src="tents.jpg" style = "width:600px">
-
-		</div>
-		<div class="text">
-		  <p>This is a beautiful picture.</p>
-		</div>
 
 	<div class="segment">
-		<p>
-			<a href="https://yaledailynews.com/blog/2024/04/21/live-pro-divestment-protesters-continue-beinecke-encampment-for-third-day-under-threat-of-disciplinary-action/">Pro-divestment protesters continue Beinecke encampment for third day under threat of disciplinary action</a>
-		</p>
 		<p>
 			Salovey breaks five months of silence with email at 4:30. At night, largest gathering yet, lots of singing, organizers rejected offer for meetings with Yale Corp. Crowd mostly disperses before 1am with no arrests made. Police are gathering in Schwarzman.
 		</p>
@@ -349,18 +344,17 @@
 
 	<div class="segment">
 		<p>
-			Scrolly-telling the arrests and movement of the protests. 
+			Scrolly-telling the arrests and movement of the protests
 		</p>
 	</div>
 
 	<section id="scrolly">
-	  <div class="sticky-thing">
-		<div class="ai2html-container">
-	
-<!-- ai2html goes below this line -->
-
-
-<!-- Generated by ai2html v0.113.0 - 2024-04-24 04:36 -->
+		<div class="sticky-thing">
+		  <div class="ai2html-container">
+	  
+  <!-- ai2html goes below this line -->
+  
+<!-- Generated by ai2html v0.113.0 - 2024-04-24 03:35 -->
 <!-- ai file: protestBig.ai -->
 <style media="screen,print">
 	#g-protestBig-box ,
@@ -398,16 +392,6 @@
 <div style="padding: 0 0 60.8216% 0;"></div>
 		<img id="g-protestBig-Artboard_1-img" class="g-protestBig-Artboard_1-img g-aiImg" alt="" src="protestBig-Artboard_1.png"/>
 <svg class="g-protestBig-Artboard_1-interactions-img g-aiImg" id="g-protestBig-Artboard_1-interactions-img" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.2" viewBox="0 0 1958.312 1190.888">
-  <g id="cautiontape">
-    <rect x="897" y="288" width="24" height="24" fill="#1f2599" stroke-width="0"/>
-    <polyline points="977.087 280.615 816 588 1103.213 743.688 1167.986 634.834" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="8"/>
-    <rect x="921" y="679" width="24" height="24" fill="#1f2599" stroke-width="0"/>
-  </g>
-  <g id="policeinside">
-    <rect x="1301" y="556" width="24" height="24" fill="#1f2599" stroke-width="0"/>
-    <rect x="1205" y="301" width="24" height="24" fill="#1f2599" stroke-width="0"/>
-    <rect x="1322" y="417" width="24" height="24" fill="#1f2599" stroke-width="0"/>
-  </g>
   <g id="tents40">
     <g>
       <polygon points="1157.205 436.9 1161.108 429.537 1165.197 436.9 1157.205 436.9" fill="#e8e5d8" stroke-width="0"/>
@@ -756,6 +740,7 @@
     <rect x="1527.793" y="392.293" width="23.348" height="53.771" transform="translate(16.616 -56.842) rotate(2.127)" fill="#2e3192" stroke-width="0"/>
     <rect x="1464.793" y="285.293" width="23.348" height="53.771" transform="translate(403.865 1373.75) rotate(-56.642)" fill="#2e3192" stroke-width="0"/>
   </g>
+  <circle id="dot" cx="1161.5" cy="466.5" r="4.5" fill="#000" stroke-width="0"/>
   <polygon id="xcOccupy" style="opacity:0.21;" points="423.728 898.478 529.728 716.478 776 860 763.083 882.761 676.791 1034.506 576.996 976.73 423.728 898.478" fill="#ff7f7f" fill-rule="evenodd" stroke-width="0"/>
   <g id="blockade">
     <rect x="1017.199" y="31.832" width="23.348" height="53.771" transform="translate(167.201 -506.57) rotate(30)" fill="#2e3192" stroke-width="0"/>
@@ -793,7 +778,7 @@
       <path d="M1239.042,289.92v-6.554h-1.748v-1.121h1.748v-3.59h1.311v3.59h2.603v1.121h-2.603v6.288c0,1.064.342,1.634,1.576,1.634.38,0,.761-.038,1.045-.133v1.121c-.304.057-.836.114-1.291.114-1.919,0-2.641-.741-2.641-2.469Z" fill="#000" stroke-width="0"/>
       <path d="M1244.552,287.242c0-3.553,2.279-5.187,4.388-5.187,2.337,0,4.085,1.786,4.085,5.206v.247h-7.162c.019,2.47,1.425,3.856,3.153,3.856,1.501,0,2.355-.646,3.115-1.824l.817.646c-.874,1.406-2.108,2.28-4.009,2.28-2.336,0-4.388-1.805-4.388-5.224ZM1251.751,286.463c-.133-1.9-1.045-3.306-2.83-3.306-1.444,0-2.793,1.045-3.04,3.306h5.87Z" fill="#000" stroke-width="0"/>
       <path d="M1255.495,282.245h1.312v1.976h.037c.779-1.235,1.995-2.166,3.971-2.166h.229l-.134,1.216s-.36-.019-.398-.019c-1.634,0-2.926.912-3.704,2.489v6.516h-1.312v-10.012Z" fill="#000" stroke-width="0"/>
-	</g>
+    </g>
     <g>
       <path d="M1726.16,784.561l1.197-.437c.627,1.957,2.052,2.964,4.027,2.964,2.108,0,3.477-.969,3.477-2.546,0-1.463-.703-2.204-3.686-3.153-3.021-.95-4.56-1.767-4.56-4.084,0-2.014,1.805-3.609,4.369-3.609,2.641,0,4.161,1.349,4.825,3.229l-1.14.532c-.702-1.824-1.938-2.545-3.704-2.545-1.881,0-3.021,1.007-3.021,2.298,0,1.577.931,2.109,3.895,3.059,2.926.931,4.369,1.9,4.369,4.18,0,2.336-2.07,3.837-4.882,3.837-2.641,0-4.503-1.444-5.168-3.724Z" fill="#000" stroke-width="0"/>
       <path d="M1738.985,774.284h1.387v1.406h-1.387v-1.406ZM1739.023,778.007h1.311v10.012h-1.311v-10.012Z" fill="#000" stroke-width="0"/>
@@ -932,11 +917,6 @@
       <path d="M1789.508,238.802h1.311v14.058h-1.311v-14.058Z" fill="#000" stroke-width="0"/>
     </g>
   </g>
-  <g id="arrests">
-    <rect x="1232" y="447" width="24" height="24" fill="#1f2599" stroke-width="0"/>
-    <rect x="1169" y="523" width="24" height="24" fill="#1f2599" stroke-width="0"/>
-    <rect x="1123" y="405" width="24" height="24" fill="#1f2599" stroke-width="0"/>
-  </g>
 <style>
 #g-protestBig-Artboard_1-interactions-img rect, #g-protestBig-Artboard_1-interactions-img circle, #g-protestBig-Artboard_1-interactions-img path, #g-protestBig-Artboard_1-interactions-img line, #g-protestBig-Artboard_1-interactions-img polyline, #g-protestBig-Artboard_1-interactions-img polygon { vector-effect: non-scaling-stroke; }
 </style>
@@ -945,118 +925,120 @@
 
 </div>
 
-<!-- End ai2html - 2024-04-24 04:36 -->
+<!-- End ai2html - 2024-04-24 03:35 -->
+
+  <!-- ai2html goes above this line -->
+  
+	
+</div>
+</div>
+	<div class="scrolly-overlay">
+		<div class="step" id="step-zero">
+		  <p>It became clear six hours later that arrests were imminent, as more police arrived and blocked off the plaza with caution tape.</p>
+		</div>
+		<div class="step" id="step-one">
+		  <p>Police began arrests just before 7am. Organizers quickly posted online, asking for supporters to return en masse, but those who arrived in time were quickly overwhelmed by police.</p>
+		</div>
+		<div class="step" id="step-two">
+		  <p>In less than an hour, police arrested 60 people, 47 of them Yale students, and led them through the Schwarzman Center to shuttles waiting on the intersection of College and Grove Streets.</p>
+		</div> 
+		<div class="step" id="step-three">
+		  <p>Those who had left the plaza upon police warning began gathering at the intersection, shouting and singing in support of those arrested.
+		  </p>
+		</div>
+		<div class="step" id="step-four">
+		  <p>In the next few hours, more and more students arrived to occupy the streetscape. Police blocked traffic along College and Grove but issued a warning that protestors would be required to disperse by 5:00pm.</p>
+		</div>
+		<div class="step" id="step-five">
+		  <p>Protestors abided and moved the occupation to Cross Campus. Some students relocated a seder event to the area TKTK. For now, loud demonstrations have mostly subsided, with a smaller and quieter gathering remaining on the green Tuesday evening.</p>
+		</div>
+</div>
+</section>
 
 
 
-
-<!-- ai2html goes above this line -->
-
-          </div>
-        </div>
-
-		<div class="scrolly-overlay">
-			<div class="step" id="step-y">
-			</div>
-			<div class="step" id="step-z">
-			</div>
-			<div class="step" id="step-zero">
-			  <p>It became clear six hours later that arrests were imminent, as more police arrived and blocked off the plaza with caution tape.</p>
-			</div>
-			<div class="step" id="step-one">
-			  <p>Police began arrests just before 7am. Organizers quickly posted online, asking for supporters to return en masse, but those who arrived in time were quickly overwhelmed by police.</p>
-			</div>
-			<div class="step" id="step-two">
-			  <p>In less than an hour, police arrested 60 people, 47 of them Yale students, and led them through the Schwarzman Center to shuttles waiting on the intersection of College and Grove Streets.</p>
-			</div> 
-			<div class="step" id="step-three">
-			  <p>Those who had left the plaza upon police warning began gathering at the intersection, shouting and singing in support of those arrested.
-			  </p>
-			</div>
-			<div class="step" id="step-four">
-			  <p>In the next few hours, more and more students arrived to occupy the streetscape. Police blocked traffic along College and Grove but issued a warning that protestors would be required to disperse by 5:00pm.</p>
-			</div>
-			<div class="step" id="step-five">
-			  <p>Protestors abided and moved the occupation to Cross Campus. Some students relocated a seder event to the area TKTK. For now, loud demonstrations have mostly subsided, with a smaller and quieter gathering remaining on the green Tuesday evening.</p>
-			</div>
-      </section>
-
-    <script>
-      
+   <script>
     /* Scrollytelling code goes under here */
 
 	  // Code that runs when the website loads
 	document.addEventListener("DOMContentLoaded", function(e) {
-		d3.selectAll("g").classed('hidden', true)
-		d3.select("occupation2").classed('hidden', true)
-		d3.select("#placeNames").classed('hidden', false)
+		d3.selectAll("#tents40", "#s1_a", "#s2_a", "#s3_a", "#s4_a", "#s5_a", "#s6_a", "#s7_a", "#occupation2", "#cautiontape", "#shuttles", "#arrow1", "#arrow2", "#arrow3", "#blockade").classed('hidden', true)
 	  });
 
 
-	// Entering Step Y
-	d3.select("#step-y").on('stepin',function(e) {
-		d3.select("#placeNames").classed('hidden', false)
-		d3.select("#tents40").classed('hidden', false)
-		
-	});
-	
   	//   Entering Step Z
       d3.select("#step-z").on('stepin',function(e) {
-
-	});
+		d3.selectAll("#placeNames").classed('hidden', true)
+	  })
 	
-    //   Entering Step Zero
+    //   Entering Step Zero (Old Campus)
       	d3.select("#step-zero").on('stepin',function(e) {
-			d3.select("#placeNames").classed('hidden', false)
-			d3.select("#tents40").classed('hidden', false)
-			d3.select("#cautiontape").classed('hidden', false)
-			d3.select("#s1_a").classed('hidden', false)
+		d3.selectAll("#oldCampus").classed('hidden', false)
+		d3.selectAll("#oldCampusGlow").classed('glow', true)
+		d3.select("#titleCard").classed('hidden', true)
+		
 	  })
 
-	//   Entering Step One 
+	//   Entering Step One (Colleges)
 	   	d3.select("#step-one").on('stepin',function(e) {
-			d3.select("#cautiontape").classed('hidden', true)
-			d3.select("#s1_a").classed('hidden', true)
-			d3.select("#s2_a").classed('hidden', false)
+   
       })
 
-	//   Entering Step Two 
+	//   Entering Step Two (Toads)
 	   	d3.select("#step-two").on('stepin',function(e) {
-			d3.select("#arrow1").classed('hidden', false)
-			d3.select("#s2_a").classed('hidden', true)
-			d3.select("#s3_a").classed('hidden', false)
-			d3.select("#s4_a").classed('hidden', false)
-			d3.select("#tents40").classed('hidden', true)
-			d3.select("#plazaPink").classed('hidden', true)
+        
       })
 
-	//   Entering Step Three 
+	//   Entering Step Three (Frats)
 	   d3.select("#step-three").on('stepin',function(e) {
-		d3.select("#arrow1").classed('hidden', true)
-		d3.select("#arrow2").classed('hidden', false)
-		d3.select("#s3_a").classed('hidden', true)
-		d3.select("#s4_a").classed('hidden', true)
-		d3.select("#s5_a").classed('hidden', false)
+     	
 	})
 
-    //   Entering Step Four
+    //   Entering Step Four (Sports)
     d3.select("#step-four").on('stepin',function(e) {
-		d3.select("#arrow2").classed('hidden', true)
-		d3.select("#occupation2").classed('hidden', false)
-		d3.select("#s5_a").classed('hidden', true)
-		d3.select("#blockade").classed('hidden', false)
-		d3.select("#s6_a").classed('hidden', false)
-		d3.select("#s7_a").classed('hidden', false)
+		
       })
 
-	//   Entering Step Five 
+	//   Entering Step Five (Frat rows)
 		d3.select("#step-five").on('stepin',function(e) {
-			d3.select("#s6_a").classed('hidden', true)
-			d3.select("#s7_a").classed('hidden', true)
-			d3.select("#blockade").classed('hidden', true)
-			d3.select("#occupation2").classed('hidden', true)
-			d3.select("#arrow3").classed('hidden', false)
+	
+
       })
+
+    //   Entering Step Six (A cappella)
+    d3.select("#step-six").on('stepin',function(e) {
+		
+      })
+
+	   //   Entering Step Seven (Residences)
+	   d3.select("#step-seven").on('stepin',function(e) {
+			
+      })
+
+	   //   Entering Step Eight (bars)
+	   d3.select("#step-eight").on('stepin',function(e) {
+		
+      })
+
+	   //   Entering Step Nine (societies)
+	   d3.select("#step-nine").on('stepin',function(e) {
+			
+      })
+
+	   //   Entering Step Ten (final point)
+	  		d3.select("#step-ten").on('stepin',function(e) {
+		
+      })
+
+	   //   Entering Step Eleven
+	  	 	d3.select("#step-eleven").on('stepin',function(e) {
+		
+			
+      })
+
+
+
+
 
     </script>
 
@@ -1067,7 +1049,7 @@
 		.setup({
 			step: "#scrolly .scrolly-overlay .step",
 			offset: 0.75,
-			debug: false
+			debug: true
 		})
 		.onStepEnter(function({ element, index, direction}) {
 			const event = new CustomEvent('stepin', { detail: { direction: direction } })
@@ -1157,47 +1139,6 @@
      
   })();
 </script>
-
-<div class="row">
-	<div class="column">
-	  <img src="tents.jpg" alt="Snow" style="width:100%">
-	</div>
-	<div class="column">
-	  <img src="tents.jpg" alt="Forest" style="width:100%">
-	</div>
-	<div class="column">
-	  <img src="tents.jpg" alt="Mountains" style="width:100%">
-	</div>
-  </div>
-
-
-	<div class="segment">
-		<p>
-			This is placeholder text. Yale police arrested 47 pro-Palestine student protesters on Monday morning.
-		</p>
-	</div>
-
-	<div class="segment">
-		<p>
-			The announcement comes amid monthslong calls from students for divestment from military weapons manufacturers, including a current student demonstration occupying Beinecke Plaza and a hunger strike that has urged the University to completely divest from weapons manufacturers. 
-		</p>
-	</div>
-	<div class="segment">
-	<p>
-		The protests remained peaceful throughout the day and night. On Sunday afternoon, the 14 Yale students in Hunger Strikers For Palestine announced that they were ending their action after eight days. At around 4:30 p.m., University President Peter Salovey broke his silence on the protests in an email to the Yale community, writing that the university would pursue disciplinary action “according to its policies.”
-	</p>
-</div>
-<div class="segment">
-	<p>
-		For now, all is calm on the plaza, but organizers have posted on their Instagram, Occupy Beinecke, asking supporters to show up to the plaza early in the morning because they expect arrests.
-	</p>
-</div>
-
-
-
-
-
-
 
   </body>
 </html>
