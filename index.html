@@ -68,6 +68,58 @@
     max-width: 60%; /* Adjusted to fit within the container */
 }
 
+
+
+ /* Style for the button */
+ .audio-button {
+      width: 75px; /* Adjust the width and height as needed */
+      height: 75px;
+      padding: 0; /* Remove padding to fit the triangle */
+      background-color: #FF7F7F;
+      color: white;
+      border: none;
+      border-radius: 50%; /* Make it circular */
+      position: relative; /* Required for absolute positioning of triangle */
+      overflow: hidden; /* Hide overflow of triangle */
+    }
+
+    /* Style for the triangle */
+    .play-triangle {
+      position: absolute; /* Position relative to the button */
+      top: 50%; /* Align vertically */
+      left: 55%; /* Align horizontally */
+      transform: translate(-50%, -50%); /* Adjust position */
+      width: 0;
+      height: 0;
+	  color: #E8E5D8;
+      border-top: 15px solid transparent; /* Change size as needed */
+      border-bottom: 15px solid transparent; /* Change size as needed */
+      border-left: 25px solid #E8E5D8; /* Change color and size as needed */
+      cursor: pointer;
+	}
+
+	.button-text {
+	font-size: 27px; /* Adjust font size as needed */
+	  font-family: "BentonSans";
+      font-style: italic; /* Make text italic */
+	  text-align: center;
+	  font-weight: 300;
+      margin-left: 10px; /* Adjust margin as needed */
+	  margin-top: 50px;
+    }
+
+
+	.button-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+		.content {
+  text-align: center;
+}
+
+
 	.smallsegment {
     	padding: 20px;
     	border: 1px solid #ddd;
@@ -169,6 +221,14 @@
         border: black;
       }
 
+	  .pullquote {
+      font-size: 27px; /* Adjust font size as needed */
+	  font-family: "BentonSans";
+      font-style: italic; /* Make text italic */
+	  text-align: center;
+	  font-weight: 300;
+	  }
+
       .hidden { visibility: hidden; }
 
 
@@ -224,10 +284,34 @@
 		</p>
 	</div>
 
+	<div>
+		<p class="pullquote">
+			"This is a block of text that will be larger and italicized." — President Peter Salovey
+		  </p>
+
+	</div>
+
 	<div class="datetime">
 		<p>
 			Monday, April 15
 		</p>
+	</div>
+
+	<div class="container">
+		<div class="content">
+			<div>
+				<button class="audio-button" onclick="playAudio()">
+					<div class="play-triangle"></div>
+				</button>
+
+			<span class="button-text">"This is a pull quote"</span>
+
+			<audio id="myAudio">
+			<source src="elliememo.m4a" type="audio/mpeg">
+			Your browser does not support the audio element.
+			</audio>
+			</div>
+		</div>
 	</div>
 
 	<div class="segment">
@@ -1157,6 +1241,14 @@
      
   })();
 </script>
+
+<script>
+	function playAudio() {
+	  var audio = document.getElementById("myAudio");
+	  audio.play();
+	}
+  </script>
+  
 
 <div class="row">
 	<div class="column">
