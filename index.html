@@ -3,205 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-
-	@font-face{
-   		font-family: "ModernoFB";
-    	src: 'ModernoFB-Bold.otf',
-	}
-    
-
-	@font-face {
-		font-family: "Benton Sans";
-		src:
-			url("https://assets.staticlp.com/javascripts/2c8c3478-e1ba-4af3-bfd0-9fea259fc17f-3.woff") format("woff"),
-			url("https://assets.staticlp.com/javascripts/2c8c3478-e1ba-4af3-bfd0-9fea259fc17f-1.ttf") format("truetype");
-		font-style: normal;
-		font-stretch: normal;
-		// font-weight: var(--font-weight-light, 300);
-		font-weight: 300;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: "Benton Sans";
-		src:
-			url("https://assets.staticlp.com/javascripts/743d3d3a-da58-48d2-a5c3-bd7994650e23-3.woff") format("woff"),
-			url("https://assets.staticlp.com/javascripts/743d3d3a-da58-48d2-a5c3-bd7994650e23-1.ttf") format("truetype");
-		font-style: normal;
-		font-stretch: normal;
-		// font-weight: var(--font-weight-medium, 600);
-		font-weight: 600;
-		font-display: swap;
-	}
-
-	body {
-		margin: 2em;
-		font-size: 1.5em;
-		font-family: "Benton Sans", sans-serif;
-		font-weight: 600;
-		-webkit-font-smoothing: antialiased;
-		background-color: #E8E5D8;
-	}
-
-	.segment {
-    	padding: 20px;
-    	border: 1px solid #ddd;
-    	border-radius: 5px;
-    	margin: 10px;
-		background-color: #E8E5D8;
-   	 	color: black;
-    	font-family: "Benton Sans";
-		font-weight: var(--font-weight-light, 300);
-		height: 18vh; /* Take up 100% of the viewport height */
-    	width: 95%; /* Take up 100% of the viewport width */
-		display: flex; /* Use flexbox layout */
-   	 	justify-content: center; /* Center horizontally */
-   	 	align-items: center; /* Center vertically */
-		border: none;
-		text-align: center;
-  	}  
-
-	  .segment p {
-        text-align: center;
-        padding: 2rem;
-        font-size: 1.25rem;
-		width: 600px
-	  }
-
-	.smallsegment {
-    	padding: 20px;
-    	border: 1px solid #ddd;
-    	border-radius: 5px;
-    	margin: 20px;
-		background-color: black;
-   	 	color: white;
-    	font-family: Helvetica, sans-serif;
-		height: 10vh; /* Take up 100% of the viewport height */
-    	width: 95%; /* Take up 100% of the viewport width */
-		display: flex; /* Use flexbox layout */
-   	 	justify-content: center; /* Center horizontally */
-   	 	align-items: center; /* Center vertically */
-		border: none;
-		text-align: center;
-  	}  
-	.datetime {
-    	padding: 20px;
-    	border: 1px solid #ddd;
-    	border-radius: 5px;
-    	margin: 10px;
-		background-color: #E8E5D8;
-   	 	color: black;
-    	font-family: "ModernoFB";
-		font-weight: var(--font-weight-heavy, 600);
-		height: 5; /* Take up 100% of the viewport height */
-    	width: 95%; /* Take up 100% of the viewport width */
-		display: flex; /* Use flexbox layout */
-   	 	justify-content: center; /* Center horizontally */
-   	 	align-items: center; /* Center vertically */
-		border: none;
-		text-align: center;
-  	}  
-
-	.datetime p {
-        text-align: center;
-        padding: 2rem;
-        font-size: 2.25rem;
-		width: 800px
-	}
-
-	.column {
-  		float: left;
- 		width: 30%;
-  		padding: 15px;
-	}
-
-/* Clear floats after image containers */
-		.row::after {
-		content: "";
-		clear: both;
-		display: table;
-		}
-
-      #scrolly {
-        position: relative;
-        padding: 1rem;
-      }
-
-      .scrolly-overlay {
-        position: relative;
-        padding: 0;
-        max-width: 35rem;
-        margin: 0 auto;
-      }
-
-      .sticky-thing {
-        position: -webkit-sticky;
-        position: sticky;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        z-index: 0;
-        top: 0;
-        height: 100vh;
-        /* Center everything inside */
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-	  .step {
-    margin: 0 auto 2rem auto; /* Sets margin top and bottom to 2rem and centers the element horizontally */
-    margin-bottom: 25rem; /* Adds additional margin-bottom */
-    background-color: #E8E5D8; /* Sets background color to black */
-    color: black; /* Sets text color to white */
-    font: inherit; /* Inherits font properties from parent */
-    min-height: 50px; /* Set minimum height */
-    display: inline-block; /* Ensures that the element takes up space even when it's empty */
-}
-
-      .step p {
-        text-align: center;
-        padding: 1rem;
-        font-size: 1.25rem;
-        border: black;
-      }
-
-      .hidden { visibility: hidden; }
-
-
-      /* When it's less than 700 pixels wide, do normal scrollytelling */
-      @media only screen and (min-width: 700px) {
-        #scrolly.side-by-side {
-          display: flex;
-        }
-
-        #scrolly.side-by-side > div {
-          flex-basis: 0;
-          flex-grow: 1;
-          flex-shrink: 1;
-          padding: 0.75em;
-        }
-
-        #scrolly.side-by-side .scrolly-overlay {
-          margin-top: 70vh;
-          order: 0;
-          /* Change these to adjust sizing options */
-          min-width: 15rem;
-          max-width: 20rem;
-        }
-
-        #scrolly.side-by-side .sticky-thing {
-          order: 1;
-          flex-grow: 2;
-        }
-      }
-    </style>
-	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
-	
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
   </head>
 
   
@@ -209,7 +14,6 @@
 	<div> 
 		<img src = "titleCard-Artboard_1.png" style = "width:100%">
 	</div> 
-
 
 	<div class="segment">
 		<p>
@@ -244,7 +48,6 @@
 				Protestors begin to occupy Beinecke Plaza, @occupybeinecke begins to operate
 				Jews for Ceasefire vigil? (photo)
 		</p>
-
 	</div>
 
 	<div class="segment">
@@ -967,6 +770,7 @@
 			</div>
 			<div class="step" id="step-zero">
 			  <p>It became clear six hours later that arrests were imminent, as more police arrived and blocked off the plaza with caution tape.</p>
+        <img src="tents.jpg" style="width: 100%">
 			</div>
 			<div class="step" id="step-one">
 			  <p>Police began arrests just before 7am. Organizers quickly posted online, asking for supporters to return en masse, but those who arrived in time were quickly overwhelmed by police.</p>
