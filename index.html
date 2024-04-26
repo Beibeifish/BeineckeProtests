@@ -68,8 +68,6 @@
     max-width: 60%; /* Adjusted to fit within the container */
 }
 
-
-
  /* Style for the button */
  .audio-button {
       width: 75px; /* Adjust the width and height as needed */
@@ -118,23 +116,6 @@
   text-align: center;
 }
 
-
-	.smallsegment {
-    	padding: 20px;
-    	border: 1px solid #ddd;
-    	border-radius: 5px;
-    	margin: 20px;
-		background-color: black;
-   	 	color: white;
-    	font-family: Helvetica, sans-serif;
-		height: 10vh; /* Take up 100% of the viewport height */
-    	width: 95%; /* Take up 100% of the viewport width */
-		display: flex; /* Use flexbox layout */
-   	 	justify-content: center; /* Center horizontally */
-   	 	align-items: center; /* Center vertically */
-		border: none;
-		text-align: center;
-  	}  
 	.datetime {
     	padding: 20px;
     	border: 1px solid #ddd;
@@ -158,6 +139,15 @@
         padding: 2rem;
         font-size: 2.25rem;
 		width: 800px
+	}
+
+	.byline p {
+        padding: 2rem;
+        font-size: 2.25rem;
+		font-style: italic; /* Make text italic */
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.25rem;
 	}
 
 	.grid-container-three {
@@ -220,14 +210,6 @@
         border: black;
       }
 
-	  .pullquote {
-      font-size: 27px; /* Adjust font size as needed */
-	  font-family: "BentonSans";
-      font-style: italic; /* Make text italic */
-	  text-align: center;
-	  font-weight: 300;
-	  }
-
       .hidden { visibility: hidden; }
 
 
@@ -267,9 +249,16 @@
   
 <body>
 	<div> 
-		<img src = "titleCard-Artboard_1.png" style = "width:100%">
+		<img src = "titleCard.png" style = "width:100%">
 	</div> 
-
+	<div class="byline">
+		<p>
+			<em>
+				By Isaac Yu, Ellie Park, Dylan Bober, Karen Lin and Anika Seth
+			</em>
+		</p>
+	</div>
+	
 	<div class="segment">
 		<p>
 			This is placeholder text. Yale police arrested 47 pro-Palestine student protesters on Monday morning.
@@ -282,34 +271,10 @@
 		</p>
 	</div>
 
-	<div>
-		<p class="pullquote">
-			"This is a block of text that will be larger and italicized." — President Peter Salovey
-		  </p>
-
-	</div>
-
 	<div class="datetime">
 		<p>
 			Monday, April 15
 		</p>
-	</div>
-
-	<div class="container">
-		<div class="content">
-			<div>
-				<button class="audio-button" onclick="playAudio()">
-					<div class="play-triangle"></div>
-				</button>
-
-			<span class="button-text">"This is a pull quote"</span>
-
-			<audio id="myAudio">
-			<source src="elliememo.m4a" type="audio/mpeg">
-			Your browser does not support the audio element.
-			</audio>
-			</div>
-		</div>
 	</div>
 
 	<div class="segment">
@@ -1239,14 +1204,6 @@
      
   })();
 </script>
-
-<script>
-	function playAudio() {
-	  var audio = document.getElementById("myAudio");
-	  audio.play();
-	}
-  </script>
-  
 
 <div class="row">
 	<div class="column">
