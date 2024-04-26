@@ -37,30 +37,29 @@ body {
  -webkit-font-smoothing: antialiased;
  background-color: #E8E5D8;
 }
-
 .segment {
- padding: 20px;
- border: 1px solid #ddd;
- border-radius: 5px;
- margin: 10px;
- background-color: #E8E5D8;
-     color: black;
- font-family: "Benton Sans";
- font-weight: var(--font-weight-light, 300);
- height: 18vh; /* Take up 100% of the viewport height */
- width: 95%; /* Take up 100% of the viewport width */
- display: flex; /* Use flexbox layout */
-     justify-content: center; /* Center horizontally */
-     align-items: center; /* Center vertically */
- border: none;
- text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #E8E5D8;
+    color: black;
+    font-family: "Benton Sans";
+    font-weight: var(--font-weight-light, 300);
+    height: 18vh; /* Take up 100% of the viewport height */
+    width: 100%; /* Take up 100% of the viewport width */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border: none;
+    text-align: center;
 }  
 
 .segment p {
- text-align: center;
- padding: 2rem;
- font-size: 1.25rem;
- width: 600px
+    text-align: left;
+    padding: 2rem;
+    font-size: 1.25rem;
+    max-width: 60%; /* Adjusted to fit within the container */
 }
 
 .smallsegment {
@@ -104,18 +103,20 @@ body {
  width: 800px
 }
 
-.column {
-   float: left;
-  width: 30%;
-   padding: 15px;
+.grid-container-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 1000px; /* Adjust as needed */
+  padding: 20px;
+  margin: 0 auto; /* Center the grid container */
 }
 
-/* Clear floats after image containers */
- .row::after {
- content: "";
- clear: both;
- display: table;
- }
+.grid-item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 #scrolly {
  position: relative;
@@ -208,6 +209,74 @@ display: inline-block; /* Ensures that the element takes up space even when it's
  }
 
 }
+
+.pullquote {
+    font-size: 27px; /* Adjust font size as needed */
+    font-family: "BentonSans";
+    font-style: italic; /* Make text italic */
+    text-align: center;
+    font-weight: 300;
+    }
+
+.byline {
+    text-align: center;
+	font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+}
+
+ /* Style for the button */
+ .audio-button {
+    width: 75px; /* Adjust the width and height as needed */
+    height: 75px;
+    padding: 0; /* Remove padding to fit the triangle */
+    background-color: #FF7F7F;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    position: relative; /* Required for absolute positioning of triangle */
+    overflow: hidden; /* Hide overflow of triangle */
+  }
+  
+.audiobutton:hover {
+    background-color: #E8E5D8;
+  }
+  
+  /* Style for the triangle */
+  .play-triangle {
+    position: absolute; /* Position relative to the button */
+    top: 50%; /* Align vertically */
+    left: 55%; /* Align horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+    width: 0;
+    height: 0;
+    color: #E8E5D8;
+    border-top: 15px solid transparent; /* Change size as needed */
+    border-bottom: 15px solid transparent; /* Change size as needed */
+    border-left: 25px solid #E8E5D8; /* Change color and size as needed */
+    cursor: pointer;
+  }
+
+  .button-text {
+  font-size: 27px; /* Adjust font size as needed */
+    font-family: "BentonSans";
+    font-style: italic; /* Make text italic */
+    text-align: center;
+    font-weight: 300;
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+
+
+  .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+
+      .content {
+text-align: center;
+}
+
 
 
 
