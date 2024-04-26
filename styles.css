@@ -41,12 +41,10 @@ body {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 10px;
     background-color: #E8E5D8;
     color: black;
     font-family: "Benton Sans";
     font-weight: var(--font-weight-light, 300);
-    height: 18vh; /* Take up 100% of the viewport height */
     width: 100%; /* Take up 100% of the viewport width */
     display: flex; /* Use flexbox layout */
     justify-content: center; /* Center horizontally */
@@ -57,7 +55,7 @@ body {
 
 .segment p {
     text-align: left;
-    padding: 2rem;
+    margin: 3px 0;
     font-size: 1.25rem;
     max-width: 60%; /* Adjusted to fit within the container */
 }
@@ -79,28 +77,26 @@ body {
  text-align: center;
 }  
 .datetime {
- padding: 20px;
- border: 1px solid #ddd;
+ padding: 2px;
  border-radius: 5px;
- margin: 10px;
- background-color: #E8E5D8;
+ margin: auto;
      color: black;
  font-family: "ModernoFB";
  font-weight: var(--font-weight-heavy, 600);
- height: 5; /* Take up 100% of the viewport height */
  width: 95%; /* Take up 100% of the viewport width */
  display: flex; /* Use flexbox layout */
      justify-content: center; /* Center horizontally */
      align-items: center; /* Center vertically */
  border: none;
  text-align: center;
+ margin-bottom: -50px;
 }  
 
 .datetime p {
  text-align: center;
  padding: 2rem;
  font-size: 2.25rem;
- width: 800px
+ width: 800px;
 }
 
 .grid-container-three {
@@ -113,45 +109,34 @@ body {
 }
 
 
+.grid-container-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  max-width: 1000px; /* Adjust as needed */
+  padding: 20px;
+  padding-bottom: 1px;
+  margin: 0 auto; /* Center the grid container */
+  margin-bottom: 5px;
+}
+
+.grid-container {
+  display: grid;
+  max-width: 1000px; /* Adjust as needed */
+  padding: 20px;
+  padding-bottom: 1px;
+  margin: 0 auto; /* Center the grid container */
+  margin-bottom: 5px;
+}
+
+
+
 .grid-item {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.image-container {
-  text-align: center;
-  max-width: 100%; /* Set maximum width to prevent images from going off the page */
-}
-
-.image-container img {
-  display: inline-block;
-  width: auto;
-  max-width: 100%; /* Ensure images are responsive and fit within the container */
-  height: auto;
-  margin: 10px; /* Adjust margin between images */
-}
-
-.caption {
-  padding: 1px;
-  color: black;
-  font-family: "Benton Sans";
-  font-weight: var(--font-weight-light, 300);
-  height: auto;
-  width: 100%; /* Take up 100% of the viewport width */
-  display: flex; /* Use flexbox layout */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  border: none;
-  text-align: center;
-}  
-
-.caption p {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.4rem;
-  max-width: 60%; /* Adjusted to fit within the container */
-}
 
 
 
@@ -246,6 +231,17 @@ display: inline-block; /* Ensures that the element takes up space even when it's
  }
 
 }
+
+.caption {
+  font-size: 15px; /* Adjust font size as needed */
+  font-family: "BentonSans";
+  font-style: italic; /* Make text italic */
+  font-style: bold; 
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  }
 
 .pullquote {
     font-size: 27px; /* Adjust font size as needed */
