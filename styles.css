@@ -37,8 +37,9 @@ body {
  -webkit-font-smoothing: antialiased;
  background-color: #E8E5D8;
 }
+
 .segment {
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #E8E5D8;
@@ -57,7 +58,7 @@ body {
     text-align: left;
     margin: 3px 0;
     font-size: 1.25rem;
-    max-width: 60%; /* Adjusted to fit within the container */
+    max-width: 50%; /* Adjusted to fit within the container */
 }
 
 .smallsegment {
@@ -138,8 +139,6 @@ body {
 }
 
 
-
-
 #scrolly {
  position: relative;
  padding: 1rem;
@@ -184,11 +183,21 @@ display: inline-block; /* Ensures that the element takes up space even when it's
  text-align: left;
  padding: 1rem;
  font-size: 1.25rem;
+ font-weight: 200;
  border: black;
 }
 
 .hidden { visibility: hidden; }
 
+
+.map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto; 
+      }
 
 /* When it's less than 700 pixels wide, do normal scrollytelling */
 @media only screen and (min-width: 700px) {
@@ -230,6 +239,10 @@ display: inline-block; /* Ensures that the element takes up space even when it's
 
  }
 
+}
+
+.ai2html-1 {
+  transition: margin 2.5s 0s, transform 1.5s 0s;
 }
 
 .caption {
