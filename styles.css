@@ -30,7 +30,6 @@
 }
 
 body {
- margin: 2em;
  font-size: 1.5em;
  font-family: "Benton Sans", sans-serif;
  font-weight: 600;
@@ -39,6 +38,7 @@ body {
 }
 
 .segment {
+    position: relative;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -58,7 +58,8 @@ body {
     text-align: left;
     margin: 3px 0;
     font-size: 1.25rem;
-    max-width: 50%; /* Adjusted to fit within the container */
+    width: 50%;
+    max-width: 70vw; /* Adjusted to fit within the container */
 }
 
 .smallsegment {
@@ -100,6 +101,48 @@ body {
  width: 800px;
 }
 
+.image-slider {
+  position: relative;
+  margin: auto;
+  display: flex; /* Use flexbox layout */
+     justify-content: center; /* Center horizontally */
+     align-items: center; /* Center vertically */
+  width: 100vw; /* span the width of the viewport */
+  overflow: hidden; /* hide overflow to prevent horizontal scroll */
+  margin-bottom: 50px;
+}
+
+.image-slider img {
+  width: 100%; /* make images span the width of the container */
+  display: none; /* hide all images by default */
+  max-width: 100%;
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  font-family: "ModernoFB";
+  font-weight: 600;
+  font-size: 4rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  z-index: 1000; /* Ensure text is above images */
+}
+
+.slider-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+  z-index: -1; /* Behind the text */
+}
+
 .grid-container-three {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -122,15 +165,12 @@ body {
 }
 
 .grid-container {
-  display: grid;
-  max-width: 1000px; /* Adjust as needed */
-  padding: 20px;
+  display: flex;
+  max-width: 100vw; /* Adjust as needed */
   padding-bottom: 1px;
   margin: 0 auto; /* Center the grid container */
   margin-bottom: 5px;
 }
-
-
 
 .grid-item {
   width: 100%;
@@ -138,6 +178,27 @@ body {
   object-fit: cover;
 }
 
+.grid-container-four {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 10px;
+  max-width: 1000px; /* Adjust as needed */
+  padding: 20px;
+  padding-bottom: 1px;
+  margin: 0 auto; /* Center the grid container */
+  margin-bottom: 5px;
+}
+
+.grid-container-one {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  max-width: 1000px; /* Adjust as needed */
+  padding: 20px;
+  padding-bottom: 1px;
+  margin: 0 auto; /* Center the grid container */
+  margin-bottom: 5px;
+}
 
 #scrolly {
  position: relative;
@@ -189,6 +250,19 @@ display: inline-block; /* Ensures that the element takes up space even when it's
 
 .hidden { visibility: hidden; }
 
+.image-slider {
+  width: 95vw; /* span the width of the viewport */
+  overflow: hidden; /* hide overflow to prevent horizontal scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%; /* make images span the width of the container */
+  display: none; /* hide all images by default */
+}
 
 .map-container {
       display: flex;
@@ -257,11 +331,15 @@ display: inline-block; /* Ensures that the element takes up space even when it's
   }
 
 .pullquote {
+    display: flex;
+    margin: auto;
     font-size: 27px; /* Adjust font size as needed */
     font-family: "BentonSans";
     font-style: italic; /* Make text italic */
+    font-style: bold; /* Make text bold */
     text-align: center;
     font-weight: 300;
+    max-width: 75vw;
     }
 
 .byline {
