@@ -646,12 +646,6 @@
 		<p>
 	</div>
 
-	<div style="text-align:center">
-		<img src = "park-20.jpg" style="width:60vw"> 
-	</div>
-
-	<p class="caption">(Ellie Park, Photography Editor)</p>
-
 	<div class="segment">
 		<p>
 			A smaller group of pro-Israel counter-protesters was present from around 11:30 p.m. to around 1 a.m., largely remaining on Beinecke Plaza in front of Woodbridge Hall. Confrontations and shouting between the two groups escalated around 11:39 p.m., when a counter-protester hung an Israeli flag over a wooden art panel that pro-Palestine protesters placed on the Plaza earlier in the day. 
@@ -678,6 +672,13 @@
 		<b>Read live coverage from Saturday: </b><a href="https://yaledailynews.com/blog/2024/04/20/under-threat-of-disciplinary-action-pro-divestment-protesters-continue-beinecke-encampment/">No arrests for second night in a row as pro-divestment protesters maintain overnight encampment on Beinecke Plaza</a>
 		</p>
 	</div>
+
+	<div style="text-align:center">
+		<img src = "park-20.jpg" style="width:60vw"> 
+	</div>
+
+	<p class="caption">(Ellie Park, Photography Editor)</p>
+
 
 	<div class="segment">
 		<p>
@@ -758,9 +759,38 @@
 
 	<div class="segment">
 		<p>
-			A group of Jewish community members, draped in American and Israeli flags, sat on the other side of the plaza and began singing Jewish prayers and songs. The group, approximately 30 strong at its peak, left after about an hour without incident.
+			A group of Jewish community members, draped in American and Israeli flags, gathered on the other side of the plaza and began singing Jewish prayers and songs. The group, approximately 30 strong at its peak, left after about an hour without incident.
 		</p>
 	</div>
+
+		<!--AUDIO BUTTON-->
+		<div class="container">
+			<div class="content">
+				<div>
+					<button class="audio-button" onclick="playAudio4()">
+						<div class="play-triangle"></div>
+					</button>
+	
+				<span class="button-text"></span>
+	
+				<audio id="israel">
+				<source src="israel.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				</div>
+			</div>
+		</div>
+	
+		<script>
+			function playAudio4() {
+				var audio = document.getElementById('israel');
+				if (audio.paused) {
+					audio.play();
+				} else {
+					audio.pause();
+				}
+			}
+		</script>
 
 	<div class="segment">
 		<p>
@@ -1604,7 +1634,7 @@
 
 	<div class="segment">
 		<p>
-			On Beinecke Plaza, no signs of the occupation remained — except the caution tape and police officers who continue to block access, more than a week later
+			On Beinecke Plaza, no physical signs of the occupation remain — but more than a week later, the plaza remains closed, with police officers and caution tape continuing to restrict access.
 		</p>
 		</div>
 
