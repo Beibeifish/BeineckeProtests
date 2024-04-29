@@ -128,7 +128,7 @@ body {
   padding: 0;
   font-family: "ModernoFB";
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
@@ -242,7 +242,7 @@ body {
   }
 
   .slider-content {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .caption {
