@@ -128,7 +128,7 @@ body {
   padding: 0;
   font-family: "ModernoFB";
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 3rem;
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
@@ -402,7 +402,7 @@ display: inline-block; /* Ensures that the element takes up space even when it's
 
 .byline {
     text-align: center;
-	font-weight: 300;
+	  font-weight: 300;
     font-style: italic;
     font-size: 18px;
 }
