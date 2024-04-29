@@ -394,11 +394,11 @@ display: inline-block; /* Ensures that the element takes up space even when it's
     font-size: 27px; /* Adjust font size as needed */
     font-family: "BentonSans";
     font-style: italic; /* Make text italic */
-    font-style: bold; /* Make text bold */
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     max-width: 75vw;
     }
+
 
 .byline {
     text-align: center;
@@ -406,6 +406,8 @@ display: inline-block; /* Ensures that the element takes up space even when it's
     font-style: italic;
     font-size: 18px;
 }
+
+
 
  /* Style for the button */
  .audio-button {
@@ -418,10 +420,6 @@ display: inline-block; /* Ensures that the element takes up space even when it's
     border-radius: 50%; /* Make it circular */
     position: relative; /* Required for absolute positioning of triangle */
     overflow: hidden; /* Hide overflow of triangle */
-  }
-  
-.audiobutton:hover {
-    background-color: #E8E5D8;
   }
   
   /* Style for the triangle */
