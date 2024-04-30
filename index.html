@@ -1806,5 +1806,41 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
+<script>
+// Get all datetime elements
+var datetimeElements = document.querySelectorAll('.datetime');
+
+// Attach scroll event listener to each datetime element
+datetimeElements.forEach(function(datetimeElement) {
+  window.addEventListener('scroll', function() {
+    // Output for debugging
+    console.log('Scroll event');
+
+    // Get the position of the next datetime element
+    var nextDatetimeElement = datetimeElement.nextElementSibling;
+    console.log('Next datetime element:', nextDatetimeElement);
+
+    // Calculate the position of the next datetime element relative to the viewport
+    var nextDatetimePosition = nextDatetimeElement.getBoundingClientRect().top;
+    console.log('Next datetime position:', nextDatetimePosition);
+
+    // Get the position of the current datetime element
+    var datetimePosition = datetimeElement.getBoundingClientRect().top;
+    console.log('Datetime position:', datetimePosition);
+
+    // Check if the next datetime element is in the viewport
+    if (nextDatetimePosition <= window.innerHeight) {
+      // Remove sticky positioning from the datetime element
+      datetimeElement.style.position = 'static';
+      console.log('Datetime element position: static');
+    } else {
+      // Add sticky positioning to the datetime element
+      datetimeElement.style.position = 'sticky';
+      datetimeElement.style.top = '0';
+      console.log('Datetime element position: sticky');
+    }
+  });
+});
+</script>
   </body>
 </html>
